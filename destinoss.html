@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-image: url("https://i.pinimg.com/originals/4e/62/41/4e6241e9227c32cb8310826b8bb6bfeb.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        font-family: Poppins;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 1350px;
+      }
+      nav {
+        width: 800px;
+        justify-content: center;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        background-color: #2d3b55;
+        opacity: 90%;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+        font-size: 1rem;
+        justify-content: center;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        font-size: 1.1rem;
+        color: #f6ca58;
+      }
+      img {
+        width: 4rem;
+        padding: 2rem;
+      }
+      hr {
+        height: 1px;
+        width: 31%;
+        color: #2d3b55;
+        margin-left: 0.5rem;
+      }
+      h2 {
+        font-size: 1.4rem;
+        padding: 2rem;
+        font-family: Poppins;
+        margin-left: 4rem;
+      }
+      .nav_destinos {
+        width: 400px;
+        font-size: 1rem;
+        margin-left: 50rem;
+      }
+      .ul_destinos {
+        background-color: rgb(5, 0, 36);
+        height: 60px;
+        font-size: 1rem;
+        opacity: 60%;
+      }
+      .ul_destinos li a {
+        color: #ffffff;
+      }
+      .ul_destinos li a:hover {
+        color: #f6ca58;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="img/estrela.png" alt="icone de estrela" />
+      <hr color="#2D3B55" />
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><strong> 00</strong> MENU</a>
+          </li>
+          <li>
+            <a href="destinoss.html"><strong> 01 </strong> DESTINOS</a>
+          </li>
+          <li>
+            <a href="#tripulação"><strong> 02 </strong> TRIPULAÇÃO</a>
+          </li>
+          <li>
+            <a href="#tecnologias"><strong> 03 </strong> TECNOLOGIAS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>01 Conheça os destinos</h2>
+    <nav class="nav_destinos">
+      <ul class="ul_destinos">
+        <li><a href="#menu">jupter</a></li>
+        <li><a href="#jupter">Júpter</a></li>
+        <li><a href="#lua">Lua</a></li>
+        <li><a href="#venus">Vênus</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
