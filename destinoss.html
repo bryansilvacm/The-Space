@@ -24,7 +24,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 1350px;
+        width: 1340px;
       }
       nav {
         width: 800px;
@@ -88,13 +88,49 @@
       .ul_destinos li a:hover {
         color: #f6ca58;
       }
+      #jupter {
+        margin-top: -5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+      }
+      .tituloefotojupter {
+        display: none;
+      }
+      .imgjupter {
+        width: 20rem;
+        margin-left: 4rem;
+        margin-top: -5rem;
+      }
+      .titulo_destino {
+        margin-top: -2rem;
+        color: #f6ca58;
+      }
+      .p_destinos {
+        margin-top: 7rem;
+        display: none;
+      }
+
+      #marte {
+        margin-top: -5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 15rem;
+      }
+      .tituloefotomarte {
+        display: none;
+      }
+      .imgmarte {
+        width: 20rem;
+        margin-left: 4rem;
+        margin-top: -5rem;
+      }
     </style>
   </head>
   <body>
     <header>
       <img src="img/estrela.png" alt="icone de estrela" />
       <hr color="#2D3B55" />
-
       <nav>
         <ul>
           <li>
@@ -116,11 +152,132 @@
     <h2>01 Conheça os destinos</h2>
     <nav class="nav_destinos">
       <ul class="ul_destinos">
-        <li><a href="#menu">jupter</a></li>
-        <li><a href="#jupter">Júpter</a></li>
-        <li><a href="#lua">Lua</a></li>
-        <li><a href="#venus">Vênus</a></li>
+        <li><a href="#" onclick="mostrarmarte()">Marte</a></li>
+        <li><a href="#" onclick="mostrarjupter()">Júpter</a></li>
+        <li><a href="#" onclick="mostrarlua()">Lua</a></li>
+        <li><a href="#" onclick="mostrarvenus()">Vênus</a></li>
       </ul>
     </nav>
+    <div id="marte">
+      <div class="tituloefotomarte">
+        <h2 class="titulo_destino">Marte</h2>
+        <img
+          class="imgmarte"
+          src="https://www.ull.es/portal/cienciaull/wp-content/uploads/sites/24/2021/06/marte.png"
+          alt="imagem de marte"
+        />
+      </div>
+      <p class="p_destinos">
+        Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em
+        massa, e é o quinto mais próximo do Sol. Possui menos de um milésimo da
+        massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas
+        em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno.
+        <br />
+        Júpiter possui o dia mais curto do Sistema Solar: ele leva apenas cerca
+        de 10 horas para girar uma volta completa – 14 horas mais rápido do que
+        a rotação média da Terra. Em contraponto, Júpiter faz uma órbita
+        completa ao redor do Sol em cerca de 12 anos terrestres.
+      </p>
+    </div>
+
+    <div id="jupter">
+      <div class="tituloefotojupter">
+        <h2 class="titulo_destino">Júpter</h2>
+        <img
+          class="imgjupter"
+          src="https://static.vecteezy.com/system/resources/previews/027/294/102/non_2x/jupiter-planet-isolated-on-transparent-background-cutout-free-png.png"
+          alt="imagem de júpter"
+        />
+      </div>
+      <p class="p_destinos">
+        Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em
+        massa, e é o quinto mais próximo do Sol. Possui menos de um milésimo da
+        massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas
+        em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno.
+        <br />
+        Júpiter possui o dia mais curto do Sistema Solar: ele leva apenas cerca
+        de 10 horas para girar uma volta completa – 14 horas mais rápido do que
+        a rotação média da Terra. Em contraponto, Júpiter faz uma órbita
+        completa ao redor do Sol em cerca de 12 anos terrestres.
+      </p>
+    </div>
+
+    <script>
+      function mostrarmarte() {
+        var img = document.querySelector("#marte .tituloefotomarte");
+        var paragrafo = document.querySelector("#marte .p_destino");
+
+        if (
+          paragrafo.style.display === "none" ||
+          paragrafo.style.display === ""
+        ) {
+          paragrafo.style.display = "block";
+        } else {
+          paragrafo.style.display = "none";
+        }
+        if (img.style.display === "none" || img.style.display === "") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      }
+
+      function mostrarjupter() {
+        var img = document.querySelector("#jupter .tituloefotojupter");
+        var paragrafo = document.querySelector("#jupter .p_destinos");
+
+        if (
+          paragrafo.style.display === "none" ||
+          paragrafo.style.display === ""
+        ) {
+          paragrafo.style.display = "block";
+        } else {
+          paragrafo.style.display = "none";
+        }
+        if (img.style.display === "none" || img.style.display === "") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      }
+
+      function mostrarlua() {
+        var img = document.querySelector("#lua .imglua");
+        var paragrafo = document.querySelector("#lua .p_destinos");
+
+        if (
+          paragrafo.style.display === "none" ||
+          paragrafo.style.display === ""
+        ) {
+          paragrafo.style.display = "block";
+        } else {
+          paragrafo.style.display = "none";
+        }
+        if (img.style.display === "none" || img.style.display === "") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      }
+
+      function mostrarvenus() {
+        var img = document.querySelector("#venus .imgvenus");
+        var paragrafo = document.querySelector("#venus .p_destinos");
+
+        if (
+          paragrafo.style.display === "none" ||
+          paragrafo.style.display === ""
+        ) {
+          paragrafo.style.display = "block";
+        } else {
+          paragrafo.style.display = "none";
+        }
+        if (img.style.display === "none" || img.style.display === "") {
+          img.style.display = "block";
+        } else {
+          img.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
