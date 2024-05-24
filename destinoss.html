@@ -2,6 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <title>SPACE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,13 +25,18 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 1340px;
+        width: 100%;
+	margin-left:auto;
+	margin-right:auto;
+	max-width:1540px;
       }
-      nav {
-        width: 800px;
+      .navprincipal {
+	width:100%;
+        max-width:800px;
         justify-content: center;
-      }
-      ul {
+	margin: 0 auto:      
+}
+      .ulprincipal {
         display: flex;
         flex-direction: row;
         gap: 3rem;
@@ -39,11 +45,13 @@
         height: 5rem;
         justify-content: center;
         align-items: center;
+
       }
       li {
         list-style: none;
         font-size: 1rem;
         justify-content: center;
+	
       }
       a {
         text-decoration: none;
@@ -61,26 +69,51 @@
       }
       hr {
         height: 1px;
-        width: 31%;
+        width: 40%;
         color: #2d3b55;
         margin-left: 0.5rem;
       }
+
+      h1{
+	font-size:1.7rem;
+	padding:5rem;
+	margin: 0 auto;
+	max-width:1540px;
+}
       h2 {
         font-size: 1.4rem;
-        padding: 2rem;
+        padding: 4rem;
         font-family: Poppins;
-        margin-left: 4rem;
+        margin: 0 auto;
+	max-width:800px;
       }
+	#destinos{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+}
       .nav_destinos {
-        width: 400px;
+        width: 100%;
+	height:100%;
+	max-height:70px;
+	max-width:500px;
         font-size: 1rem;
-        margin-left: 50rem;
+        margin: 0 auto;
+	margin-right:20rem;
+	background-color: rgb(5, 0, 36);
+	opacity:80%;	
+	display:flex;
+	align-items:center;
       }
       .ul_destinos {
-        background-color: rgb(5, 0, 36);
+	display:flex;
+	flex-direction:row;
+	gap:5rem;
         height: 60px;
         font-size: 1rem;
-        opacity: 60%;
+	align-items:center;
+        
       }
       .ul_destinos li a {
         color: #ffffff;
@@ -88,34 +121,14 @@
       .ul_destinos li a:hover {
         color: #f6ca58;
       }
-      #jupter {
-        margin-top: -5rem;
-        display: flex;
-        flex-direction: row;
-        gap: 15rem;
-      }
-      .tituloefotojupter {
-        display: none;
-      }
-      .imgjupter {
-        width: 20rem;
-        margin-left: 4rem;
-        margin-top: -5rem;
-      }
-      .titulo_destino {
-        margin-top: -2rem;
-        color: #f6ca58;
-      }
-      .p_destinos {
-        margin-top: 7rem;
-        display: none;
-      }
-
       #marte {
-        margin-top: -5rem;
+        margin-top: -2rem;
         display: flex;
         flex-direction: row;
-        gap: 15rem;
+	justify-content:center;
+	width:1500px;
+	margin-left:13rem;
+	gap:15rem;
       }
       .tituloefotomarte {
         display: none;
@@ -125,14 +138,87 @@
         margin-left: 4rem;
         margin-top: -5rem;
       }
-    </style>
+      .titulo_destino {
+        margin-top: -2rem;
+        color: #f6ca58;
+}
+      .p_destinos {
+	font-size:1.1rem;
+        margin-top: 9rem;
+        display: none;
+	width:40rem;
+	text-shadow: 2px 2px 10px black;
+      }
+     
+
+        #jupter {
+        margin-top: -2rem;
+        display: flex;
+        flex-direction: row;
+	justify-content:center;
+	width:1500px;
+	margin-left:13rem;
+	gap:15rem;
+	
+      }
+      .tituloefotojupter {
+        display: none;
+      }
+      .imgjupter {
+        width: 20rem;
+        margin-left: 4rem;
+        margin-top: -5rem;
+      }
+
+      #lua {
+        margin-top: -2rem;
+        display: flex;
+        flex-direction: row;
+	justify-content:center;
+	width:1500px;
+	margin-left:13rem;
+	gap:15rem;
+	
+      }
+      .tituloefotolua {
+        display: none;
+      }
+      .imglua {
+        width: 20rem;
+        margin-left: 4rem;
+        margin-top: -5rem;
+      }
+
+	#venus {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+	justify-content:center;
+	width:1500px;
+	margin-left:13rem;
+	gap:15rem;
+	
+      }
+      .tituloefotovenus {
+        display: none;
+      }
+      .imgvenus {
+        width: 20rem;
+        margin-left: 4rem;
+        margin-top: -5rem;
+      }
+
+
+
+
+         </style>
   </head>
   <body>
     <header>
-      <img src="img/estrela.png" alt="icone de estrela" />
+      <img src="C:\Users\Caixa\Downloads\landingpage\space\space-tourism-website-main\estrela.png" alt="icone de estrela" />
       <hr color="#2D3B55" />
-      <nav>
-        <ul>
+      <nav class="navprincipal">
+        <ul class="ulprincipal">
           <li>
             <a href="index.html"><strong> 00</strong> MENU</a>
           </li>
@@ -140,7 +226,7 @@
             <a href="destinoss.html"><strong> 01 </strong> DESTINOS</a>
           </li>
           <li>
-            <a href="#tripulação"><strong> 02 </strong> TRIPULAÇÃO</a>
+            <a href="tripulação.html"><strong> 02 </strong> TRIPULAÇÃO</a>
           </li>
           <li>
             <a href="#tecnologias"><strong> 03 </strong> TECNOLOGIAS</a>
@@ -148,16 +234,17 @@
         </ul>
       </nav>
     </header>
-
-    <h2>01 Conheça os destinos</h2>
+    <section id="destinos">
+    <h1>01 Conheça os destinos</h1>
     <nav class="nav_destinos">
       <ul class="ul_destinos">
-        <li><a href="#" onclick="mostrarmarte()">Marte</a></li>
-        <li><a href="#" onclick="mostrarjupter()">Júpter</a></li>
-        <li><a href="#" onclick="mostrarlua()">Lua</a></li>
-        <li><a href="#" onclick="mostrarvenus()">Vênus</a></li>
+        <li><a href="#marte" onclick="mostrarmarte()">Marte</a></li>
+        <li><a href="#jupter" onclick="mostrarjupter()">Júpter</a></li>
+        <li><a href="#lua" onclick="mostrarlua()">Lua</a></li>
+        <li><a href="#venus" onclick="mostrarvenus()">Vênus</a></li>
       </ul>
     </nav>
+	</section>	
     <div id="marte">
       <div class="tituloefotomarte">
         <h2 class="titulo_destino">Marte</h2>
@@ -168,15 +255,12 @@
         />
       </div>
       <p class="p_destinos">
-        Júpiter é o maior planeta do Sistema Solar, tanto em diâmetro quanto em
-        massa, e é o quinto mais próximo do Sol. Possui menos de um milésimo da
-        massa solar, contudo tem 2,5 vezes a massa de todos os outros planetas
-        em conjunto. É um planeta gasoso, junto com Saturno, Urano e Netuno.
-        <br />
-        Júpiter possui o dia mais curto do Sistema Solar: ele leva apenas cerca
-        de 10 horas para girar uma volta completa – 14 horas mais rápido do que
-        a rotação média da Terra. Em contraponto, Júpiter faz uma órbita
-        completa ao redor do Sol em cerca de 12 anos terrestres.
+        Marte é o quarto planeta do Sistema Solar, sendo o segundo menor e mais
+        próximo da Terra, depois de Mercúrio. Apelidado de "Planeta Vermelho", é um
+        corpo celeste telúrico com uma fina atmosfera, com características de
+        rocha sedimentar que sugerem que já foi coberto por oceanos e uma
+        hidrosfera, o que sugere que em sua superfície poderia ter existido vida
+        extraterrestre.
       </p>
     </div>
 
@@ -201,11 +285,53 @@
         completa ao redor do Sol em cerca de 12 anos terrestres.
       </p>
     </div>
+	<div id="lua">
+      <div class="tituloefotolua">
+        <h2 class="titulo_destino">Lua</h2>
+        <img class="imglua" src="https://www.publicdomainpictures.net/pictures/390000/nahled/mond-himmel-transparent-png.png" alt="imagem da lua"/>
+      </div>
+      <p class="p_destinos">
+A Lua é o único satélite natural da Terra e o quinto maior do Sistema Solar. É o objeto celeste mais próximo da Terra e exerce uma influência significativa sobre os fenômenos naturais, como as marés e a estabilidade do eixo de rotação da Terra. A Lua não possui atmosfera significativa e sua superfície é marcada por crateras, mares e montanhas. Desde os tempos antigos, a Lua tem fascinado a humanidade e tem sido alvo de exploração científica e exploração espacial.
+
+
+      </p>
+    </div>
+
+<div id="venus">
+      <div class="tituloefotovenus">
+        <h2 class="titulo_destino">Vênus</h2>
+        <img class="imgvenus" src="https://static.vecteezy.com/system/resources/previews/020/922/026/original/isolated-realistic-venus-surface-illustration-png.png" alt="imagem da lua"/>
+      </div>
+      <p class="p_destinos">
+Vênus é o segundo planeta do Sistema Solar e é frequentemente chamado de 'irmão gêmeo' da Terra devido a suas dimensões e composição semelhantes. No entanto, é um mundo extremamente hostil, com uma atmosfera densa composta principalmente de dióxido de carbono e nuvens de ácido sulfúrico. Sua superfície é caracterizada por vulcões ativos e temperaturas extremamente altas, tornando-o o planeta mais quente do Sistema Solar. Apesar de seu ambiente inóspito, Vênus tem sido objeto de estudo científico para compreender melhor os processos atmosféricos e a história do clima em planetas terrestres.
+      </p>
+    </div>
+
+
 
     <script>
+	 function desabilitarTodosExceto(planeta) {
+    // Lista de todos os IDs de planetas
+    var planetas = ["marte", "jupter", "lua", "venus"];
+
+    // Itera sobre todos os planetas
+    planetas.forEach(function(nome) {
+      // Verifica se o planeta atual é diferente do planeta que está sendo selecionado
+      if (nome !== planeta) {
+        // Desabilita o planeta atual
+        var img = document.querySelector("#" + nome + " img");
+        var paragrafo = document.querySelector("#" + nome + " p");
+
+        img.style.display = "none";
+        paragrafo.style.display = "none";
+      }
+    });
+  }
+
       function mostrarmarte() {
-        var img = document.querySelector("#marte .tituloefotomarte");
-        var paragrafo = document.querySelector("#marte .p_destino");
+	
+	        var img = document.querySelector("#marte .tituloefotomarte");
+        var paragrafo = document.querySelector("#marte .p_destinos");
 
         if (
           paragrafo.style.display === "none" ||
@@ -223,7 +349,8 @@
       }
 
       function mostrarjupter() {
-        var img = document.querySelector("#jupter .tituloefotojupter");
+
+	        var img = document.querySelector("#jupter .tituloefotojupter");
         var paragrafo = document.querySelector("#jupter .p_destinos");
 
         if (
@@ -242,7 +369,7 @@
       }
 
       function mostrarlua() {
-        var img = document.querySelector("#lua .imglua");
+        var img = document.querySelector("#lua .tituloefotolua");
         var paragrafo = document.querySelector("#lua .p_destinos");
 
         if (
@@ -261,7 +388,7 @@
       }
 
       function mostrarvenus() {
-        var img = document.querySelector("#venus .imgvenus");
+        var img = document.querySelector("#venus .tituloefotovenus");
         var paragrafo = document.querySelector("#venus .p_destinos");
 
         if (
