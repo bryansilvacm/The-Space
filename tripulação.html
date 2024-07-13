@@ -1,237 +1,351 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>SPACE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            background-image: url("https://wallpapers.com/images/hd/black-galaxy-1600-x-900-background-koiam0no5bt4v0bx.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            color: white;
-            font-family: Poppins;
-        }
+      body {
+        background-image: url("https://wallpapers.com/images/hd/black-galaxy-1600-x-900-background-koiam0no5bt4v0bx.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        color: white;
+        font-family: Poppins;
+      }
 
-        header {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 1540px;
-        }
+      header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1540px;
+      }
 
-        .navprincipal {
-            width: 100%;
-            max-width: 800px;
-            justify-content: center;
-            margin: 0 auto;
-        }
+      .navprincipal {
+        width: 100%;
+        max-width: 800px;
+        justify-content: center;
+        margin: 0 auto;
+      }
 
-        .ulprincipal {
-            display: flex;
-            flex-direction: row;
-            gap: 3rem;
-            background-color: #2d3b55;
-            opacity: 90%;
-            height: 5rem;
-            justify-content: center;
-            align-items: center;
-        }
+      .ulprincipal {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        background-color: #2d3b55;
+        opacity: 90%;
+        height: 5rem;
+        justify-content: center;
+        align-items: center;
+      }
 
-        li {
-            list-style: none;
-            font-size: 1rem;
-            justify-content: center;
-        }
+      li {
+        list-style: none;
+        font-size: 1rem;
+        justify-content: center;
+      }
 
-        a {
-            text-decoration: none;
-            color: white;
-            transition: 0.5s;
-        }
+      a {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+      }
 
-        a:hover {
-            font-size: 1.1rem;
-            color: #f6ca58;
-        }
+      a:hover {
+        font-size: 1.1rem;
+        color: #f6ca58;
+      }
 
-        img {
-            width: 4rem;
-            padding: 2rem;
-        }
+      img {
+        width: 4rem;
+        padding: 2rem;
+      }
 
-        hr {
-            height: 1px;
-            width: 40%;
-            color: #2d3b55;
-            margin-left: 0.5rem;
-        }
+      hr {
+        height: 1px;
+        width: 40%;
+        color: #2d3b55;
+        margin-left: 0.5rem;
+      }
 
-        main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
-        .tripulaçãolin1, .tripulaçãolin2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: top;
-            height: 100%;
-            max-height: 600px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-        }
+      .tripulaçãolin1,
+      .tripulaçãolin2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: top;
+        height: 100%;
+        max-height: 600px;
+        margin: -1rem auto;
+        flex-wrap: wrap;
+      }
 
-        h2 {
-            font-size: 1.4rem;
-            width: 100%;
-            max-width: 20rem;
-            text-align: center;
-        }
+      h2 {
+        font-size: 1.2rem;
+        width: 100%;
+        max-width: 20rem;
+        text-align: center;
+      }
 
-        .imglin1 {	    
-	width:17rem;
+      .imglin1 {
+        width: 14rem;
         border-radius: 7rem;
         transition: 0.5s;
-        }
-	
-        .imglin1:hover {
-            width: 17.5rem;
-        }
-	.imglin2{
-	width:19rem;
-	border-radius:7rem;
-	transition:0.5s;
-}
-        .imglin2:hover {
-            width: 19.5rem;
-        }
+      }
 
-        .tripulantes {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            max-height: 600px;
-        }
+      .imglin1:hover {
+        width: 16rem;
+      }
+      .imglin2 {
+        width: 18rem;
+        border-radius: 7rem;
+        transition: 0.5s;
+      }
+      .imglin2:hover {
+        width: 19.5rem;
+      }
 
-        .text1 {	
+      .tripulantes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        max-height: 600px;
+      }
+
+      .text {
         display: none;
-	background:#021859;
-	width:100%;
-	max-width:800px;
-	height:100%;
-	max-height:300px;
-	padding:4rem;
-	border-radius:1rem;
-	box-shadow:5px 5px 4px black;
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	z-index:1000;
-
-}
-	.close-btn{
-	position:absolute;
-	top:1rem;
-	right:1rem;
-	background-color:#415CF2;	
-	border:none;
-	border-radius:50%;
-	width:3rem;	
-	height:3rem;
-	cursor:pointer;
-	font-size:1.4rem;
-	text-align:center;
-	transition:0.5s;	
-}	
-	.close-btn:hover{
-	width:4rem;	
-		
-}
-	h2{
-	width:100%;
-	max-width:50rem;
-	margin:0 auto;
-	text-align:center;
-}
-	
-	
-
+        background: #021859;
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        max-height: 300px;
+        padding: 4rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 4px black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      }
+      .textlin2 {
+        display: none;
+        background: #021859;
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        max-height: 300px;
+        padding: 4rem;
+        border-radius: 1rem;
+        box-shadow: 5px 5px 4px black;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      }
+      .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: #415cf2;
+        border: none;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+        text-align: center;
+        transition: 0.5s;
+      }
+      .close-btn:hover {
+        width: 4rem;
+      }
+      h2 {
+        width: 100%;
+        max-width: 50rem;
+        margin: 0 auto;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img src="https://github.com/bryansilvacm/The-Space/blob/main/img/estrela.png?raw=true" alt="icone de estrela" />
-        <hr color="#2D3B55" />
-        <nav class="navprincipal">
-            <ul class="ulprincipal">
-                <li><a href="index.html"><strong>00</strong> MENU</a></li>
-                <li><a href="destinoss.html"><strong>01</strong> DESTINOS</a></li>
-                <li><a href="#tripulação"><strong>02</strong> TRIPULAÇÃO</a></li>
-                <li><a href="#tecnologias"><strong>03</strong> TECNOLOGIAS</a></li>
-            </ul>
-        </nav>
+      <img
+        src="https://github.com/bryansilvacm/The-Space/blob/main/img/estrela.png?raw=true"
+        alt="icone de estrela"
+      />
+      <hr color="#2D3B55" />
+      <nav class="navprincipal">
+        <ul class="ulprincipal">
+          <li>
+            <a href="index.html"><strong>00</strong> MENU</a>
+          </li>
+          <li>
+            <a href="destinoss.html"><strong>01</strong> DESTINOS</a>
+          </li>
+          <li>
+            <a href="tripulação.html"><strong>02</strong> TRIPULAÇÃO</a>
+          </li>
+          <li>
+            <a href="tecnologias.html"><strong>03</strong> TECNOLOGIAS</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <h1>Conheça a tripulação</h1>
-        <section class="tripulaçãolin1">
-            <div class="tripulantes neilebuzz">
-                <h2>Neil Armstrong e Buzz Aldrin</h2>
-                <img class="imglin1" src="https://cdn.kobo.com/book-images/71ad632c-d686-4b05-ac37-ccdb22c7ec53/1200/1200/False/neil-armstrong-and-buzz-aldrin-the-lives-and-careers-of-the-first-men-on-the-moon.jpg" onclick="mostrarTexto('text1')" />
-                <div class="text1">
-			<button class="close-btn" onclick="fechartext('text1')">&times;</button>
-                    <h2>Neil Armstrong e Buzz Aldrin</h2>
-                    <p>Neil Armstrong e Buzz Aldrin são dois dos astronautas mais famosos da história, conhecidos por serem os primeiros humanos a caminhar na Lua durante a missão Apollo 11 em 1969. Armstrong foi o comandante da missão e fez a histórica declaração: "Um pequeno passo para um homem, um grande salto para a humanidade" ao pisar na superfície lunar. Aldrin, o piloto do módulo lunar, seguiu Armstrong e também caminhou na Lua, contribuindo significativamente para o sucesso da missão.</p>
-                </div>
-            </div>
-            <div class="tripulantes valentina">
-                <h2>Valentina Tereshkova</h2>
-                <img class="imglin1" src="https://www.meteoritos.com.br/wp-content/uploads/2021/06/valentina-1.jpg" />
-            </div>
-            <div class="tripulantes kalpana">
-                <h2>Kalpana Chawla</h2>
-                <img class="imglin1" src="https://upload.wikimedia.org/wikipedia/commons/5/59/Kalpana_cropped.jpg" />
-            </div>
-        </section>
-        <section class="tripulaçãolin2">
-            <div class="tripulantes scottemikhail">
-                <h2>Scott Kelly e Mikhail Kornienko</h2>
-                <img class="imglin2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMcq5RPzKl4WZVVReXAzZ1JV6CfiBIJ1cyVv9IavJ7A&s" />
-            </div>
-            <div class="tripulantes elon_jeff_richard">
-                <h2>Elon Musk, Jeff Bezos e Richard Branson</h2>
-                <img class="imglin2" src="https://i.insider.com/60946ef3f22c6b00185dccdf?width=700" />
-            </div>
-        </section>
+      <h1>Conheça a tripulação</h1>
+      <section class="tripulaçãolin1">
+        <div class="tripulantes neilebuzz">
+          <h2>Neil Armstrong e Buzz Aldrin</h2>
+          <img
+            class="imglin1"
+            src="https://cdn.kobo.com/book-images/71ad632c-d686-4b05-ac37-ccdb22c7ec53/1200/1200/False/neil-armstrong-and-buzz-aldrin-the-lives-and-careers-of-the-first-men-on-the-moon.jpg"
+            onclick="mostrarTexto('text1')"
+          />
+          <div class="text text1">
+            <button class="close-btn" onclick="fechartext('text1')">
+              &times;
+            </button>
+            <h2>Neil Armstrong e Buzz Aldrin</h2>
+            <p>
+              Neil Armstrong e Buzz Aldrin são dois dos astronautas mais famosos
+              da história, conhecidos por serem os primeiros humanos a caminhar
+              na Lua durante a missão Apollo 11 em 1969. Armstrong foi o
+              comandante da missão e fez a histórica declaração: "Um pequeno
+              passo para um homem, um grande salto para a humanidade" ao pisar
+              na superfície lunar. Aldrin, o piloto do módulo lunar, seguiu
+              Armstrong e também caminhou na Lua, contribuindo
+              significativamente para o sucesso da missão.
+            </p>
+          </div>
+        </div>
+        <div class="tripulantes valentina">
+          <h2>Valentina Tereshkova</h2>
+          <img
+            class="imglin1"
+            src="https://www.meteoritos.com.br/wp-content/uploads/2021/06/valentina-1.jpg"
+            onclick="mostrarTexto('text2')"
+          />
+          <div class="text text2">
+            <button class="close-btn" onclick="fechartext('text2')">
+              &times;
+            </button>
+            <h2>Valentina Tereshkova</h2>
+            <p>
+              Valentina Tereshkova é uma das figuras mais icônicas da exploração
+              espacial, conhecida por ser a primeira mulher a viajar ao espaço.
+              Em 1963, ela realizou esse feito a bordo da Vostok 6, abrindo
+              caminho para futuras gerações de mulheres na ciência e na
+              tecnologia espacial.
+            </p>
+          </div>
+        </div>
+
+        <div class="tripulantes kalpana">
+          <h2>Kalpana Chawla</h2>
+          <img
+            class="imglin1"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/59/Kalpana_cropped.jpg"
+            onclick="mostrarTexto('text3')"
+          />
+          <div class="text text3">
+            <button class="close-btn" onclick="fechartext('text3')">
+              &times;
+            </button>
+            <h2>Kalpana Chawla</h2>
+            <p>
+              Kalpana Chawla foi a primeira mulher de origem indiana a viajar ao
+              espaço. Ela participou de duas missões a bordo do ônibus espacial
+              Columbia, e seu legado é lembrado tanto pela sua contribuição
+              científica quanto pelo trágico acidente que tirou sua vida em
+              2003, durante a reentrada da missão STS-107.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="tripulaçãolin2">
+        <div class="tripulantes scottemikhail">
+          <h2>Scott Kelly e Mikhail Kornienko</h2>
+          <img
+            class="imglin2"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKMcq5RPzKl4WZVVReXAzZ1JV6CfiBIJ1cyVv9IavJ7A&s"
+            onclick="mostrarTexto('text4')"
+          />
+          <div class="textlin2 text4">
+            <button class="close-btn" onclick="fechartext('text4')">
+              &times;
+            </button>
+            <h2>Scott Kelly e Mikhail Kornienko</h2>
+            <p>
+              Scott Kelly e Mikhail Kornienko são famosos por sua missão de um
+              ano a bordo da Estação Espacial Internacional (ISS), de 2015 a
+              2016. Esse experimento tinha como objetivo estudar os efeitos de
+              longas permanências no espaço no corpo humano, proporcionando
+              dados cruciais para futuras missões de longa duração, como uma
+              eventual viagem a Marte.
+            </p>
+          </div>
+        </div>
+
+        <div class="tripulantes elon_jeff_richard">
+          <h2>Elon Musk, Jeff Bezos e Richard Branson</h2>
+          <img
+            class="imglin2"
+            src="https://i.insider.com/60946ef3f22c6b00185dccdf?width=700"
+            onclick="mostrarTexto('text5')"
+          />
+          <div class="textlin2 text5">
+            <button class="close-btn" onclick="fechartext('text5')">
+              &times;
+            </button>
+            <h2>Elon Musk, Jeff Bezos e Richard Branson</h2>
+            <p>
+              Elon Musk, Jeff Bezos e Richard Branson são três empresários
+              visionários que têm transformado o setor espacial comercial. Elon
+              Musk, através de sua empresa SpaceX, tem revolucionado o
+              lançamento de foguetes com o desenvolvimento de veículos
+              reutilizáveis e a ambição de colonizar Marte. Jeff Bezos, com sua
+              empresa Blue Origin, está focado em tornar o acesso ao espaço mais
+              acessível e seguro.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
-        function mostrarTexto(className) {
-            var div = document.querySelector(`.${className}`);
-            if (div.style.display === "none" || div.style.display === "") {
-                div.style.display = "block";
-            } else {
-                div.style.display = "none";
-            }
+      function mostrarTexto(className) {
+        var div = document.querySelector(`.${className}`);
+        if (div.style.display === "none" || div.style.display === "") {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
         }
-	
-	function fechartext(className){
-	var div = document.querySelector(`.${className}`);
-	div.style.display="none";
-}
+      }
+
+      function fechartext(className) {
+        var div = document.querySelector(`.${className}`);
+        div.style.display = "none";
+      }
     </script>
-</body>
+  </body>
 </html>
