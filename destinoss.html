@@ -118,7 +118,14 @@
       .ul_destinos li a:hover {
         color: #f6ca58;
       }
-      #marte {
+     
+      .titulo_destino {
+        margin-top: -2rem;
+        color: #f6ca58;
+      }
+     
+
+      #venus, #marte, #jupter, #lua {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -126,89 +133,28 @@
         width: 100%;
         max-width: 1500px;
         margin: 0 auto;
-        margin-top: -4rem;
         gap: 12rem;
       }
-      .tituloefotomarte {
+    
+          .tituloefotomarte, .tituloefotojupter, .tituloefotolua, .tituloefotovenus {
         display: none;
       }
-      .imgmarte {
+      .imgmarte, .imgjupter, .imglua, .imgvenus {
         width: 100%;
         max-width: 18rem;
         margin: 0 auto;
       }
-      .titulo_destino {
-        margin-top: -2rem;
-        color: #f6ca58;
-      }
-      .p_destinos {
+	
+	 .p_destinos {
         font-size: 1.1rem;
         margin-top: 9rem;
         display: none;
         width: 100%;
         max-width: 40rem;
         text-shadow: 2px 2px 10px black;
-      }
+      }	
 
-      #jupter {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1500px;
-        margin: 0 auto;
-        margin-top: -4rem;
-        gap: 12rem;
-      }
-      .tituloefotojupter {
-        display: none;
-      }
-      .imgjupter {
-        width: 100%;
-        max-width: 20rem;
-        margin: 0 auto;
-      }
 
-      #lua {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1500px;
-        margin: 0 auto;
-        margin-top: -4rem;
-        gap: 12rem;
-      }
-      .tituloefotolua {
-        display: none;
-      }
-      .imglua {
-        width: 100%;
-        max-width: 20rem;
-        margin: 0 auto;
-      }
-
-      #venus {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 1500px;
-        margin: 0 auto;
-        margin-top: -4rem;
-        gap: 12rem;
-      }
-      .tituloefotovenus {
-        display: none;
-      }
-      .imgvenus {
-        width: 100%;
-        max-width: 20rem;
-        margin: 0 auto;
-      }
     </style>
   </head>
   <body>
@@ -329,98 +275,51 @@
     </div>
 
     <script>
-      function desabilitarTodosExceto(planeta) {
+	function desabilitarTodosExceto(planeta) {
         // Lista de todos os IDs de planetas
         var planetas = ["marte", "jupter", "lua", "venus"];
-
+        
         // Itera sobre todos os planetas
-        planetas.forEach(function (nome) {
-          // Verifica se o planeta atual é diferente do planeta que está sendo selecionado
+        planetas.forEach(function(nome) {
           if (nome !== planeta) {
             // Desabilita o planeta atual
-            var img = document.querySelector("#" + nome + " img");
-            var paragrafo = document.querySelector("#" + nome + " p");
-
-            img.style.display = "none";
-            paragrafo.style.display = "none";
-          }
+            var img = document.querySelector("#" + nome + " .tituloefoto" + nome);
+            var paragrafo = document.querySelector("#" + nome + " .p_destinos");
+            
+            if (img) img.style.display = "none";
+            if (paragrafo) paragrafo.style.display = "none";
+          }  
         });
       }
 
-      function mostrarmarte() {
-        var img = document.querySelector("#marte .tituloefotomarte");
-        var paragrafo = document.querySelector("#marte .p_destinos");
+      function toggleVisibilidade(planeta) {
+        var img = document.querySelector("#" + planeta + " .tituloefoto" + planeta);
+        var paragrafo = document.querySelector("#" + planeta + " .p_destinos");
+        
+        if (paragrafo && img) {
+          paragrafo.style.display = (paragrafo.style.display === "none" || paragrafo.style.display === "") ? "block" : "none"; 
+          img.style.display = (img.style.display === "none" || img.style.display === "") ? "block" : "none"; 
+        }
+      }
 
-        if (
-          paragrafo.style.display === "none" ||
-          paragrafo.style.display === ""
-        ) {
-          paragrafo.style.display = "block";
-        } else {
-          paragrafo.style.display = "none";
-        }
-        if (img.style.display === "none" || img.style.display === "") {
-          img.style.display = "block";
-        } else {
-          img.style.display = "none";
-        }
+      function mostrarmarte() {
+        desabilitarTodosExceto("marte");
+        toggleVisibilidade("marte");
       }
 
       function mostrarjupter() {
-        var img = document.querySelector("#jupter .tituloefotojupter");
-        var paragrafo = document.querySelector("#jupter .p_destinos");
-
-        if (
-          paragrafo.style.display === "none" ||
-          paragrafo.style.display === ""
-        ) {
-          paragrafo.style.display = "block";
-        } else {
-          paragrafo.style.display = "none";
-        }
-        if (img.style.display === "none" || img.style.display === "") {
-          img.style.display = "block";
-        } else {
-          img.style.display = "none";
-        }
+        desabilitarTodosExceto("jupter");
+        toggleVisibilidade("jupter");
       }
 
       function mostrarlua() {
-        var img = document.querySelector("#lua .tituloefotolua");
-        var paragrafo = document.querySelector("#lua .p_destinos");
-
-        if (
-          paragrafo.style.display === "none" ||
-          paragrafo.style.display === ""
-        ) {
-          paragrafo.style.display = "block";
-        } else {
-          paragrafo.style.display = "none";
-        }
-        if (img.style.display === "none" || img.style.display === "") {
-          img.style.display = "block";
-        } else {
-          img.style.display = "none";
-        }
+        desabilitarTodosExceto("lua");
+        toggleVisibilidade("lua");
       }
 
       function mostrarvenus() {
-        var img = document.querySelector("#venus .tituloefotovenus");
-        var paragrafo = document.querySelector("#venus .p_destinos");
-
-        if (
-          paragrafo.style.display === "none" ||
-          paragrafo.style.display === ""
-        ) {
-          paragrafo.style.display = "block";
-        } else {
-          paragrafo.style.display = "none";
-        }
-        if (img.style.display === "none" || img.style.display === "") {
-          img.style.display = "block";
-        } else {
-          img.style.display = "none";
-        }
+        desabilitarTodosExceto("venus");
+        toggleVisibilidade("venus");
       }
     </script>
   </body>
