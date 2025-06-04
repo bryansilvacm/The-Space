@@ -1,0 +1,1 @@
+Quer viajar para o espaço? The Space é um projeto web em construção, a ideia é forncer um aprendizado sobre o a explração espacial e ao mesmo tempo passar a senção de estar de fato em um foguete. No the Space você aprende sobre os planetas, nomes importantes da area espacial e tecnologias usadas nas missões.
